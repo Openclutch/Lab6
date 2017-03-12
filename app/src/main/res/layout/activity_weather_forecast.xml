@@ -50,5 +50,6 @@
         android:layout_height="wrap_content"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_alignParentBottom="true"
-        android:visibility="invisible" />
+        android:visibility="invisible"
+        android:id="@+id/progressBar"/>
 </RelativeLayout>
