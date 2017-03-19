@@ -21,35 +21,36 @@
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_toStartOf="@+id/imageView"
-        android:id="@+id/textView_currTemp" />
-
-    <TextView
-        android:text="TextView"
+        android:text="Loading..."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/textView_currTemp"
-        android:layout_centerHorizontal="true"
+        android:layout_toStartOf="@+id/imageView"
         android:id="@+id/textView_minTemp" />
 
     <TextView
-        android:text="TextView"
+        android:text="Loading..."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_alignTop="@+id/textView_currTemp"
-        android:layout_toEndOf="@+id/imageView"
+        android:layout_centerHorizontal="true"
         android:id="@+id/textView_maxTemp" />
+
+    <TextView
+        android:text="Loading..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imageView"
+        android:id="@+id/textView_currTemp" />
 
     <ProgressBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_alignParentBottom="true"
-        android:visibility="invisible"
-        android:id="@+id/progressBar"/>
+        android:id="@+id/progressBar"
+        android:visibility="invisible"/>
+
 </RelativeLayout>
