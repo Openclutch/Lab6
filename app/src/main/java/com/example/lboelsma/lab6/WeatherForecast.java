@@ -132,6 +132,7 @@ public class WeatherForecast extends Activity {
                     // Downloads the picture
                     this.weatherIconBitmap = BitmapFactory.decodeStream(connection.getInputStream());
 
+                    Thread.sleep(4000);
                     publishProgress(100);
 
                 } catch (Exception e) {
@@ -182,7 +183,7 @@ public class WeatherForecast extends Activity {
 
                 //set visibility of the progress bar to invisible
                 ProgressBar fetchProgress = (ProgressBar) (findViewById(R.id.progressBar));
-                fetchProgress.setVisibility(View.INVISIBLE);
+                //fetchProgress.setVisibility(View.INVISIBLE);
             }
 
         };
